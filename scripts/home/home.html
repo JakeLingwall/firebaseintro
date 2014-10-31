@@ -1,0 +1,17 @@
+<div>
+  <div ng-repeat="costume in costumes" class="costume">
+    <div>
+      <strong>{{costume.name}}</strong>
+    </div>
+    <div>
+      <span>{{costume.coolness}}</span> &bull; <span>{{costume.cost}}</span>
+    </div>
+  </div>
+
+  <div style="margin-top: 50px;">
+    <input placeholder="name" ng-model="newCostume.name"/>
+    <input placeholder="coolness" ng-model="newCostume.coolness"/>
+    <input placeholder="Cash Monies" ng-model="newCostume.cost"/>
+    <button ng-click="saveNewCostume()">Sweet Sauce!</button>
+  </div>
+</div>
